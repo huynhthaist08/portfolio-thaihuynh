@@ -73,6 +73,37 @@ body {
         color: transparent;
     }
 
+    /* Tên: Thach Lam Huynh Thai (Gradient sang phải) */
+    .text-gradient-emerald-sea {
+        /* Màu cũ: #5cdb95 (nâng lên) -> #05386b (nâng lên) */
+        background: #8df3ba; /* Fallback sáng hơn */
+
+        /* Mix: Bright Mint (#8df3ba) -> Vibrant Ocean (#0074d9) */
+        background: -webkit-linear-gradient(to right, #8df3ba, #0074d9);
+        background: linear-gradient(to right, #8df3ba, #0074d9);
+
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        font-weight: bold;
+    }
+
+    /* Vị trí: Frontend Developer (Gradient sang trái) */
+    .text-gradient-emerald-sea-2 {
+        background: #0074d9; /* Fallback */
+
+        /* Mix ngược: Vibrant Ocean (#0074d9) -> Bright Mint (#8df3ba) */
+        background: -webkit-linear-gradient(to left, #8df3ba, #0074d9);
+        background: linear-gradient(to left, #8df3ba, #0074d9);
+
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        font-weight: bold;
+    }
+
     .ring-gradient {
         background: conic-gradient(
             from 200deg,
