@@ -60,3 +60,7 @@ export function useTheme() {
 
     return ctx; // trả về {theme, toggle, setTheme}
 }
+
+// theme context -> là nguồn dữ liệu trung tâm (global state), quản lý state theme, lưu theme vào localStorage, cung cấp {theme, toggle, setTheme}
+// theme toggle -> gọi toggle() từ theme context để đổi theme
+// background -> đọc theme từ theme context để hiển thị background tương ứng

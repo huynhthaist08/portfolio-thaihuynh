@@ -1,16 +1,21 @@
 import { useTheme } from "../context/ThemeContext";
 
+// object chứa style cho background dark mode và light mode
 const DARK_BG = {
     background:
+        // radial-gradient tạo hiệu ứng nền lan toả từ 1 điểm
         "radial-gradient(125% 125% at 50% 90%, #000000 40%, #0d1a36 100%)",
 };
 
 const LIGHT_BG = {
+    // gradient sáng hơn, điểm sáng ở phía trên
     background: "radial-gradient(125% 125% at 50% 10%, #fff 40%, #475569 100%)",
 };
 
 export default function Background() {
+    // lấy giá trị theme từ context (dark hoặc light)
     const { theme } = useTheme();
+    // tạo biến kiểm tra có phải dark mode không
     const isDark = theme === "dark";
 
     return (
@@ -29,3 +34,9 @@ export default function Background() {
         </div>
     );
 }
+
+// fixed + inset-0 -> full màn hình
+// pointer-events-none -> không chặn click
+// -z-10 -> nằm phía sau tất cả
+// layer background luôn render nhưng sẽ fade in/out bằng opacity
+// dùng spread operator để merge object style

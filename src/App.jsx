@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Background from "./components/Background";
 import ThemeToggle from "./components/ThemeToggle";
+import NotFound from "./pages/NotFound";
 
 function App() {
     return (
@@ -10,6 +11,8 @@ function App() {
 
             <Routes>
                 <Route path="/" element={<HomePage />} />
+
+                <Route path="*" element={<NotFound />} />
             </Routes>
 
             <ThemeToggle />
