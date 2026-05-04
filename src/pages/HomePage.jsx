@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import { useEffect } from "react";
 import Hero from "../components/Hero";
+import Projects from "../components/Projects";
 
 const HomePage = () => {
     // lấy phần hash trong URL (viL /#projects -> has = "#projects")
@@ -20,6 +21,7 @@ const HomePage = () => {
         <>
             <NavBar />
             <Hero />
+            <Projects />
         </>
     );
 };
