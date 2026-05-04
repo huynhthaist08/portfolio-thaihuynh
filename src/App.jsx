@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage";
 import Background from "./components/Background";
 import ThemeToggle from "./components/ThemeToggle";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
             </Routes>
 
             <ThemeToggle />
+            <ScrollToTop />
         </div>
     );
 }
