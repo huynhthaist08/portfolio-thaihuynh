@@ -3,6 +3,7 @@ import NavBar from "../components/NavBar";
 import { useEffect } from "react";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
+import Experience from "../components/Experience";
 
 const HomePage = () => {
     // lấy phần hash trong URL (viL /#projects -> has = "#projects")
@@ -23,6 +24,7 @@ const HomePage = () => {
             <main>
                 <Hero />
                 <Projects />
+                <Experience />
             </main>
         </>
     );
