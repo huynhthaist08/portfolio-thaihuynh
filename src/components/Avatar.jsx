@@ -1,6 +1,6 @@
 export default function Avatar({
     size = 160,
-    src = "/images/avatar.jpg",
+    src = "/images/avatar.webp",
     alt = "Thach Lam Huynh Thai",
 }) {
     return (
