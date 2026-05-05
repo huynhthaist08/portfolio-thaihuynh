@@ -132,9 +132,9 @@ const Hero = () => {
                                             const link =
                                                 document.createElement("a");
                                             link.href =
-                                                "/pdf/THACH-LAM-HUYNH-THAI-FRESHER-FRONTEND-DEVELOPER-CV-2026.pdf";
+                                                "/pdf/THACH-LAM-HUYNH-THAI-FRONTEND-CV.pdf";
                                             link.download =
-                                                "ThachLamHuynhThai-CV.pdf";
+                                                "ThachLamHuynhThai-FrontEnd-CV.pdf";
                                             link.click();
 
                                             setOpen(false);
