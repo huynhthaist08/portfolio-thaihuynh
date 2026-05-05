@@ -122,7 +122,7 @@ export default function Contact() {
             <div className="flex items-center justify-center flex-1 w-full">
                 <div className="w-full max-w-5xl mx-auto">
                     <h2 className="text-3xl font-extrabold tracking-tight text-center sm:text-4xl">
-                        <span className="text-gradient-blue">Contact Me</span>
+                        <span className="text-gradient-blue">CONTACT</span>
                     </h2>
 
                     <div className="grid grid-cols-1 gap-10 mt-12 md:grid-cols-2 md:gap-12">
