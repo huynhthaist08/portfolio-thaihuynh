@@ -4,6 +4,8 @@ import { useEffect } from "react";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import Experience from "../components/Experience";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
     // lấy phần hash trong URL (viL /#projects -> has = "#projects")
@@ -25,7 +27,9 @@ const HomePage = () => {
                 <Hero />
                 <Projects />
                 <Experience />
+                <Contact />
             </main>
+            <Footer />
         </>
     );
 };
