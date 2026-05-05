@@ -3,7 +3,7 @@ import { HiArrowUpRight } from "react-icons/hi2";
 import { PROJECTS } from "../data/projects";
 
 function ProjectCard({ project }) {
-    const { slug, title, subtitle, image } = project;
+    const { slug, title, image, role } = project;
 
     return (
         <Link
@@ -17,6 +17,10 @@ function ProjectCard({ project }) {
                     alt={title}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
+
+                <span className="absolute left-4 top-4 rounded-md bg-black/40 px-2 py-0.5 text-[10px] font-bold tracking-widest text-white/80 backdrop-blur-sm">
+                    {role}
+                </span>
             </div>
 
             {/* content */}
@@ -26,7 +30,7 @@ function ProjectCard({ project }) {
                         CLICK TO VIEW DETAILS
                     </p>
                     <p className="mt-1 text-sm font-bold tracking-wider text-neutral-900 dark:text-white">
-                        {subtitle}
+                        {title}
                     </p>
                 </div>
 

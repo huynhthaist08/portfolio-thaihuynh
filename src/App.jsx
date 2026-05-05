@@ -4,6 +4,7 @@ import Background from "./components/Background";
 import ThemeToggle from "./components/ThemeToggle";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
+import ProjectDetail from "./pages/ProjectDetail";
 
 function App() {
     return (
@@ -12,7 +13,7 @@ function App() {
 
             <Routes>
                 <Route path="/" element={<HomePage />} />
-
+                <Route path="/projects/:slug" element={<ProjectDetail />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
 
