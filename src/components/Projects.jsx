@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { HiArrowUpRight } from "react-icons/hi2";
 import { PROJECTS } from "../data/projects";
+import { FaGithub } from "react-icons/fa";
 
 function ProjectCard({ project }) {
     const { slug, title, image, role } = project;
@@ -57,6 +58,21 @@ export default function Projects() {
                     {PROJECTS.map((p) => (
                         <ProjectCard key={p.id} project={p} />
                     ))}
+                </div>
+
+                <div className="text-[11px] md:text-[13px] text-center mt-10 font-semibold tracking-[0.2em] text-neutral-500 dark:text-neutral-400">
+                    <span className="inline-flex items-center gap-2 justify-center">
+                        View more on
+                        <a
+                            href="https://github.com/huynhthaist08"
+                            target="_blank"
+                        >
+                            <FaGithub
+                                size={18}
+                                className="text-white transition-transform duration-300 hover:-translate-y-1"
+                            />
+                        </a>
+                    </span>
                 </div>
             </div>
         </section>
