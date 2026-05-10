@@ -6,6 +6,7 @@ import Projects from "../components/Projects";
 import Experience from "../components/Experience";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Certifications from "../components/Certifications";
 
 const HomePage = () => {
     // lấy phần hash trong URL (viL /#projects -> has = "#projects")
@@ -27,6 +28,7 @@ const HomePage = () => {
                 <Hero />
                 <Projects />
                 <Experience />
+                <Certifications />
                 <Contact />
             </main>
             <Footer />

@@ -85,6 +85,28 @@ export const PROJECTS = [
         liveUrl: "https://huynhthaist08.github.io/tea-station-landingpage/",
         repoUrl: "https://github.com/huynhthaist08/tea-station-landingpage",
     },
+    {
+        id: "moji",
+        slug: "moji-app",
+        title: "Moji App",
+        subtitle: "Moji App - Realtime Chat App",
+        image: "/images/moji-app.png",
+        description:
+            "A real-time chat application built following a professional tutorial to master the MERN stack and Socket.io. Through this project, I learned how to implement instant messaging, handle real-time events, and manage secure user authentication. It helped me understand how to synchronize data between the server and multiple clients effectively. However, the current app still has bugs and is not yet stable.",
+        tech: [
+            "TypeScript",
+            "Node.js",
+            "Express",
+            "React",
+            "TailwindCSS",
+            "MongoDB",
+            "Socket.io",
+        ],
+        role: "Fullstack Tutorial",
+        teamSize: "1",
+        liveUrl: "https://moji-app-frontend-psi.vercel.app/",
+        repoUrl: "https://github.com/huynhthaist08/moji-app",
+    },
 ];
 
 export function getProjectBySlug(slug) {

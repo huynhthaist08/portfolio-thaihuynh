@@ -134,7 +134,7 @@ const Hero = () => {
                                             link.href =
                                                 "/pdf/THACH-LAM-HUYNH-THAI-FRONTEND-CV.pdf";
                                             link.download =
-                                                "ThachLamHuynhThai-FrontEnd-CV.pdf";
+                                                "THACH-LAM-HUYNH-THAI-FRONTEND-CV.pdf";
                                             link.click();
 
                                             setOpen(false);
