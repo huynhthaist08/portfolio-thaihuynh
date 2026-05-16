@@ -15,11 +15,17 @@ const Certifications = () => {
                         alt="Frontend Certification"
                         className="w-full max-w-sm rounded-lg shadow-lg transition-transform duration-300 hover:-translate-y-2"
                     />
-                    {/* <img
+
+                    <img
+                        src="/images/cer_jspro.png"
+                        alt="HTML CSS Pro Certification"
+                        className="w-full max-w-sm rounded-lg shadow-lg transition-transform duration-300 hover:-translate-y-2"
+                    />
+                    <img
                         src="/images/cer_htmlcsspro.png"
                         alt="HTML CSS Pro Certification"
                         className="w-full max-w-sm rounded-lg shadow-lg transition-transform duration-300 hover:-translate-y-2"
-                    /> */}
+                    />
                 </div>
             </div>
         </div>
